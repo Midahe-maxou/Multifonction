@@ -1,0 +1,46 @@
+name: PluginMultiFonction
+version: 1.0
+author: my
+main: main.Main
+commands:
+  alert:
+    description: send a broadcast
+    usage: /<command> [message]
+  idea:
+    description: send idea to developer to up the server
+  idea.erase:
+    description: erase the idea file
+    permission: eraseidea.use
+  idea.ban:
+    description: unauthorized player to send a idea
+    permission: ideaban.use
+  idea.deban:
+    description: authorized a idea.ban player to send a idea
+  test:
+  bvn:
+    description: send "Bienvenue !" to other players
+    usage: /<command>
+    aliases: [b]
+  rename:
+    description: rename with matching colors
+    usage: /<command>
+  nickame:
+    description: command to rename your pseudo
+    aliases: [nick]
+    usage: /<command> <nickname>
+  nightvision:
+    description: give to player night_vision effect
+    aliases: [nv,vision]
+  bottlexp:
+    description: give your experience in a bottle
+    aliases: [xpbottle,botllxp,bxp]
+    usage: /<command> [number]
+  hours:
+    description: show/set hours
+    usage: /<command> [hours] [minutes] [seconds]
+    aliases: [h]
+  speed:
+    description: set speed effect to specified player
+    usage: /<command> [player] [amplifier] [duration] or /<command> [amplifier] [duration]
+    aliases: [s]
+    permission: op
